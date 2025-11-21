@@ -49,7 +49,9 @@ typst compile cv-template.typ
 
 ## No-CLI option (friendly for non tech-savvy)
 - **LaTeX (Overleaf):** create a new Overleaf project, upload `cv-template.tex`, click Recompile, and download the PDF. Edit the macros and placeholders directly in Overleaf.
+access here : https://www.overleaf.com/read/gchrvwqwmyjw#26d57c 
 - **Typst (web/desktop):** open https://typst.app, upload `cv-template.typ` (or paste the contents), edit the variables and bullets, then export to PDF.
+access here : https://typst.app/project/rJkJWGxe2qQkTF9qwLeMkB
 
 ## Tips for both formats
 - Emphasize outcomes and scale (metrics, users, performance gains) over responsibilities.
