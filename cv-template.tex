@@ -1,0 +1,88 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.25in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+% Personalization knobs
+\newcommand{\Name}{Your Name}
+\newcommand{\Role}{Your Role or Headline}
+\newcommand{\Location}{City, Country}
+\newcommand{\Phone}{+00 0000 0000}
+\newcommand{\Email}{you@example.com}
+\newcommand{\LinkedIn}{https://www.linkedin.com/in/your-handle}
+\newcommand{\GitHub}{https://github.com/your-handle}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Remove paragraph indentation
+\setlength{\parindent}{0pt}
+
+% Format section headers
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% Compact lists
+\setlist[itemize]{leftmargin=15pt,topsep=0pt,parsep=0pt,partopsep=0pt,itemsep=2pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+{\LARGE \textbf{\Name}} \\
+\vspace{2pt}
+{\large \Role} \\
+\vspace{4pt}
+\Location\ | \Phone\ | \Email\ | \href{\LinkedIn}{LinkedIn} | \href{\GitHub}{GitHub}
+\end{center}
+
+\vspace{3pt}
+
+\section{Summary}
+1--3 sentences on what you do best, the domains you focus on, and the outcomes you create.
+
+\section{Education}
+\textbf{University Name} \textit{(Degree, GPA, Years)} \hfill City, Country \\
+\textbf{Second Institution} \textit{(Degree or Coursework, Years)} \hfill City, Country
+
+\section{Experience}
+
+\textbf{Job Title, Company} \textit{(Month Year -- Month Year)} \hfill City, Country
+\begin{itemize}
+\item Lead with an impact metric (e.g., increased X by Y\%) and how you achieved it.
+\item Describe systems, technologies, or teams you owned or built.
+\item Highlight one standout achievement that proves the scope of your role.
+\end{itemize}
+
+\textbf{Job Title, Company} \textit{(Month Year -- Month Year)} \hfill City, Country
+\begin{itemize}
+\item Showcase outcomes over responsibilities; keep bullets concise and action-oriented.
+\item Mention scale (requests per second, users served, data volumes) when possible.
+\end{itemize}
+
+\section{Projects}
+
+\textbf{Project Name} \textit{(Stack / Tools)}
+\begin{itemize}
+\item What problem you solved, how you solved it, and the measurable result.
+\item Add links with \href{https://example.com}{live demo} or \href{https://github.com/your-handle/project}{repository}.
+\end{itemize}
+
+\textbf{Project Name} \textit{(Stack / Tools)}
+\begin{itemize}
+\item Keep one or two crisp bullets; prioritize technical depth or user impact.
+\end{itemize}
+
+\section{Skills}
+\textbf{Languages:} List here \\
+\textbf{Frontend:} List here | \textbf{Backend:} List here \\
+\textbf{Cloud \& DevOps:} List here \\
+\textbf{Data/AI/IoT:} List here
+
+\section{Certifications}
+\textbf{Certification Name} | \href{https://verification-link.example}{Issuer or Credential ID} \hfill \textit{Issued Month Year} \\
+\textbf{Certification Name} | Details \hfill \textit{Issued Month Year}
+
+\end{document}
