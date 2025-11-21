@@ -1,9 +1,8 @@
 # LaTeX-CV Templates
 
-Masked CV templates matching the layout of `main.tex`, provided in both LaTeX (`cv-template.tex`) and Typst (`cv-template.typ`). Each template contains placeholders you can fill with your details.
+Masked CV templates provided in both LaTeX (`cv-template.tex`) and Typst (`cv-template.typ`). Each template contains placeholders you can fill with your details.
 
 ## Files
-- `main.tex` — the original filled-in CV.
 - `cv-template.tex` — LaTeX template version with placeholders and macros for quick edits.
 - `cv-template.typ` — Typst template version with the same structure and styling cues.
 
@@ -28,6 +27,29 @@ Masked CV templates matching the layout of `main.tex`, provided in both LaTeX (`
    # or keep a copy clean
    cp cv-template.typ my-cv.typ && typst compile my-cv.typ
    ```
+
+## Requirements
+- LaTeX toolchain providing `pdflatex` (e.g., TeX Live, MacTeX, MikTeX)
+- Typst CLI (`typst`)
+- Shell with basic CLI utilities (`cp`, etc.)
+
+## Install (quick pointers)
+- macOS: `brew install --cask mactex` and `brew install typst`
+- Ubuntu/Debian: `sudo apt-get install texlive-latex-base` (or `texlive-full`) and install Typst from https://typst.app
+- Windows: install MikTeX or TeX Live, then add Typst via the official installer/release
+
+## Run from CLI
+```bash
+# LaTeX compile
+pdflatex cv-template.tex
+
+# Typst compile
+typst compile cv-template.typ
+```
+
+## No-CLI option (friendly for non tech-savvy)
+- **LaTeX (Overleaf):** create a new Overleaf project, upload `cv-template.tex`, click Recompile, and download the PDF. Edit the macros and placeholders directly in Overleaf.
+- **Typst (web/desktop):** open https://typst.app, upload `cv-template.typ` (or paste the contents), edit the variables and bullets, then export to PDF.
 
 ## Tips for both formats
 - Emphasize outcomes and scale (metrics, users, performance gains) over responsibilities.
